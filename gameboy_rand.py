@@ -2,6 +2,7 @@ import random
 import os
 import time
 from pynput.keyboard import Key, Controller   #For getting user inputs
+from fileLocations import GameFile
 keyboard = Controller()
 
 
@@ -10,7 +11,8 @@ def openFunc(FileLocation):       #function for opening the rom and emulator
 	os.startfile(FileLocation)
 
 
-gold= 'ROM LOCATION'   #Make sure that your rom's default application is set as the emulator you want to use
+gold= GameFile   #Make sure that your rom's default application is set as the emulator you want to use
+gold = GameFile.getRom()
 
 openFunc(gold)
 
