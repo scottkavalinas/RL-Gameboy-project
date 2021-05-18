@@ -1,3 +1,6 @@
 
 #ignore file locations
 fileLocations.py
+
+#ignore pycache
+__pycache__
